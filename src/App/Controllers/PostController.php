@@ -8,15 +8,13 @@ use Framework\TemplateEngine;
 
 class PostController
 {
-    private TemplateEngine $templateEngine;
 
-    public function __construct()
+    public function __construct(private TemplateEngine $templateEngine)
     {
-        $this->templateEngine = new TemplateEngine(__DIR__ . "/../views");
     }
 
     public function addPost()
     {
-        $this->templateEngine->render("add_post.php", ['title' => 'Add a post']);
+        echo $this->templateEngine->render("add_post.php", []);
     }
 }

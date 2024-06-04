@@ -9,3 +9,10 @@ function dd(mixed $value)
     echo "</pre>";
     die();
 }
+
+function redirectTo(string $uri)
+{
+    header("Location:{$uri}");
+    http_response_code(302);
+    exit;
+}

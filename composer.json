@@ -14,7 +14,8 @@
       "App\\": "src/App"
     },
     "files": [
-      "src/App/functions.php"
+      "src/App/functions.php",
+      "src/App/Config/Middleware.php"
     ]
   }
 }

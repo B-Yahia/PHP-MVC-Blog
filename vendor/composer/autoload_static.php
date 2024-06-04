@@ -8,6 +8,7 @@ class ComposerStaticInit36b21c5b1ec5f2c6150fd8dc32234735
 {
     public static $files = array (
         'bb4655dea71541a4fcf9449ec002ac7c' => __DIR__ . '/../..' . '/src/App/functions.php',
+        'a0d34edf9c671bea3d2f800c9a5351c6' => __DIR__ . '/../..' . '/src/App/Config/Middleware.php',
     );
 
     public static $prefixLengthsPsr4 = array (

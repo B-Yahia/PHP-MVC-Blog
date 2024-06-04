@@ -6,7 +6,6 @@
 <html>
 
 <head>
-    <title>A blog app - <?php echo $title ?></title>
     <?php require __DIR__ . "/../partials/head.php"; ?>
 
 </head>

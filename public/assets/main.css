@@ -128,6 +128,31 @@ a {
 .login_card input[type="submit"]:hover {
   background-color: #104e8b;
 }
+/* Error Message Styles */
+.msg_error {
+  color: #ff6b6b; /* Bright red color to highlight the error */
+  background-color: #ffe6e6; /* Light red background for visibility */
+  border: 1px solid #ff6b6b; /* Matching border color */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px; /* Space around the text */
+  margin-top: 5px; /* Space above the message */
+  font-size: 14px; /* Slightly smaller font size */
+}
+/* Error Message Styles */
+form .form-group .msg_error {
+  color: #ff6b6b; /* Bright red color to highlight the error */
+  background-color: #ffe6e6; /* Light red background for visibility */
+  border: 1px solid #ff6b6b; /* Matching border color */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px; /* Space around the text */
+  margin-top: 5px; /* Space above the message */
+  font-size: 14px; /* Slightly smaller font size */
+}
+.new {
+  background-color: #ff6b6b;
+  padding: 5px;
+  margin: 5px;
+}
 
 /* Signup Form Styles */
 .signup_card {
@@ -223,6 +248,29 @@ a {
 
 .add_post_card input[type="submit"]:hover {
   background-color: #104e8b;
+}
+
+/* About Page Styles */
+.about_card {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about_card h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about_card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 /* Footer Styles */
