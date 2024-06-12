@@ -4,23 +4,30 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-include __DIR__ . "/../../../vendor/autoload.php";
-
+use App\Services\PostService;
 use Framework\TemplateEngine;
 
 
 class HomeController
 {
     public function __construct(
-        private TemplateEngine $templateEngine
+        private TemplateEngine $templateEngine,
+        private PostService $postService
     ) {
     }
     public function home()
     {
-        echo $this->templateEngine->render("index.php", []);
+        $posts = $this->postService->getAll();
+        echo $this->templateEngine->render("index.php", ['posts' => $posts]);
     }
     public function about()
     {
         echo $this->templateEngine->render("about.php", []);
+    }
+
+    public function deletePost()
+    {
+        $this->postService->deletePost($_POST['id']);
+        redirectTo('/');
     }
 }

@@ -16,6 +16,6 @@ class RequiredRule implements RuleInterface
 
     public function getMessage(array $data, string $field, array $params): string
     {
-        return "This field can not be empty";
+        return "This field " . $field . " can not be empty";
     }
 }

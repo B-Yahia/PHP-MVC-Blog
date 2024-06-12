@@ -7,6 +7,7 @@
 
 <head>
     <?php require __DIR__ . "/../partials/head.php"; ?>
+    <link rel="stylesheet" type="text/css" href="../../../public/assets/about.css" />
 </head>
 
 <body>

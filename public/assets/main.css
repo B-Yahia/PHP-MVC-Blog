@@ -53,81 +53,49 @@ a {
 .menu ul li a:hover {
   color: #1e90ff;
 }
-
-/* Post Card Styles */
-.post-card {
-  background-color: #444;
-  border: 1px solid #555;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 800px;
-}
-
-.post-title {
-  font-size: 20px;
-  margin: 0 0 10px;
-}
-
-.post-body {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.post-card a {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #1e90ff;
-  transition: color 0.3s;
-}
-
-.post-card a:hover {
-  color: #104e8b;
-}
-
-/* Login Form Styles */
-.login_card {
-  background-color: #444;
-  border: 1px solid #555;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 50px auto;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.login_card label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.login_card input[type="text"],
-.login_card input[type="password"] {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  background-color: #333;
-  color: aliceblue;
-}
-
-.login_card input[type="submit"] {
-  width: 90%;
-  padding: 10px;
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #1e90ff;
-  color: white;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.login_card input[type="submit"]:hover {
-  background-color: #104e8b;
+/* Green Button */
+.btn-green {
+  background-color: #28a745;
+  color: white;
 }
+
+.btn-green:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Blue Button */
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Red Button */
+.btn-red {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
 /* Error Message Styles */
 .msg_error {
   color: #ff6b6b; /* Bright red color to highlight the error */
@@ -137,140 +105,6 @@ a {
   padding: 10px; /* Space around the text */
   margin-top: 5px; /* Space above the message */
   font-size: 14px; /* Slightly smaller font size */
-}
-/* Error Message Styles */
-form .form-group .msg_error {
-  color: #ff6b6b; /* Bright red color to highlight the error */
-  background-color: #ffe6e6; /* Light red background for visibility */
-  border: 1px solid #ff6b6b; /* Matching border color */
-  border-radius: 4px; /* Slightly rounded corners */
-  padding: 10px; /* Space around the text */
-  margin-top: 5px; /* Space above the message */
-  font-size: 14px; /* Slightly smaller font size */
-}
-.new {
-  background-color: #ff6b6b;
-  padding: 5px;
-  margin: 5px;
-}
-
-/* Signup Form Styles */
-.signup_card {
-  background-color: #444;
-  border: 1px solid #555;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 50px auto;
-  width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.signup_card .form-group {
-  margin-bottom: 15px;
-}
-
-.signup_card label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.signup_card input[type="text"],
-.signup_card input[type="email"],
-.signup_card input[type="password"],
-.signup_card input[type="date"] {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  background-color: #333;
-  color: aliceblue;
-}
-
-.signup_card input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #1e90ff;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.signup_card input[type="submit"]:hover {
-  background-color: #104e8b;
-}
-
-/* Add Post Form Styles */
-.add_post_card {
-  background-color: #444;
-  border: 1px solid #555;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 50px auto;
-  width: 600px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.add_post_card .form-group {
-  margin-bottom: 15px;
-}
-
-.add_post_card label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.add_post_card input[type="text"],
-.add_post_card textarea {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  background-color: #333;
-  color: aliceblue;
-}
-
-.add_post_card input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #1e90ff;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.add_post_card input[type="submit"]:hover {
-  background-color: #104e8b;
-}
-
-/* About Page Styles */
-.about_card {
-  background-color: #444;
-  border: 1px solid #555;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 50px auto;
-  width: 80%;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.about_card h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.about_card p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
 }
 
 /* Footer Styles */

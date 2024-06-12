@@ -1,0 +1,28 @@
+/* Post Card Styles */
+.post-card {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.post-title {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.post-body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.post-card-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}

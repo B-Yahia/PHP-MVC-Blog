@@ -1,0 +1,31 @@
+.signup_card {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 50px auto;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup_card .form-group {
+  margin-bottom: 15px;
+}
+
+.signup_card label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.signup_card input[type="text"],
+.signup_card input[type="email"],
+.signup_card input[type="password"],
+.signup_card input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: aliceblue;
+}

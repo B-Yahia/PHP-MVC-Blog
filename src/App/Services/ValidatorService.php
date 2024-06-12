@@ -35,11 +35,27 @@ class ValidatorService
         ]);
     }
 
+    public function validateLoging(array $formData)
+    {
+        $this->validator->validate($formData, [
+            'username' => ['required'],
+            'password' => ['required'],
+        ]);
+    }
+
     public function getAgeFromDOB(string $dateOfBirth): int
     {
         $birthDate = new DateTime($dateOfBirth);
         $currentDate = new DateTime();
         $ageInterval = $currentDate->diff($birthDate);
         return $ageInterval->y;
+    }
+
+    public function validatePost(array $formData)
+    {
+        $this->validator->validate($formData, [
+            'title' => ['required'],
+            'content' => ['required'],
+        ]);
     }
 }

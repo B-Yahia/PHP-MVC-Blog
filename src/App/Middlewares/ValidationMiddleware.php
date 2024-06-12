@@ -16,10 +16,9 @@ class ValidationMiddleware implements MiddlewareInterface
         } catch (ValidationException $e) {
 
             $oldFormData = $_POST;
+
             unset($oldFormData['password']);
             unset($oldFormData['confirm_password']);
-
-            dd($oldFormData);
             $_SESSION['errors'] = $e->errors;
             $_SESSION['oldFormData'] = $oldFormData;
             $refer = $_SERVER["HTTP_REFERER"];

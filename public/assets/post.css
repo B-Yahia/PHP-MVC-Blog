@@ -1,0 +1,85 @@
+.post_card {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.post_title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post_body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Comment Form Styles */
+.comment_form {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comment_form h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.comment_form .form-group {
+  margin-bottom: 15px;
+}
+
+.comment_form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.comment_form input[type="text"],
+.comment_form input[type="email"],
+.comment_form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: aliceblue;
+}
+/* Comments Section Styles */
+.comments_section {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.comments_section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment_body {
+  font-size: 16px;
+  line-height: 1.4;
+}

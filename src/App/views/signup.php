@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title><?php echo $title ?> - A blog app </title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="../../../public/assets/main.css" />
+    <?php require __DIR__ . "/../partials/head.php"; ?>
+    <link rel="stylesheet" type="text/css" href="../../../public/assets/signup.css" />
 </head>
 
 <body>
     <?php require __DIR__ . "/../partials/top_menu.php"; ?>
     <form method="post">
+        <input type="hidden" name="token" value="<?php echo $csrfToken ?>" />
         <div class="signup_card">
             <div class="form-group">
                 <label for="first_name">First Name</label>
@@ -87,7 +87,7 @@
                     </div>
                 <?php endif; ?>
             </div>
-            <input type="submit" name="submit" value="Signup" />
+            <input class="btn btn-green" type="submit" name="submit" value="Signup" />
         </div>
     </form>
     <footer>Footer</footer>

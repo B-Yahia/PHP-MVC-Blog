@@ -14,6 +14,7 @@ class Router
             "path" => $path,
             "method" => strtoupper($method),
             "controller" => $controller,
+            "middlewares" => []
         ];
     }
 
@@ -29,7 +30,7 @@ class Router
     public function dispatch(string $path, string $method, Container $container = null)
     {
         $path = $this->normalisePath($path);
-        $method = strtoupper($method);
+        $method = strtoupper($_POST['_METHOD'] ?? $method);
 
         foreach ($this->routes as $route) {
             if (
@@ -40,13 +41,14 @@ class Router
             }
 
             [$class, $function] = $route['controller'];
-
             $controllerInstance = $container ?
                 $container->resolve($class) : new $class;
 
             $action = fn () => $controllerInstance->{$function}();
 
-            foreach ($this->middlewares as $middleware) {
+            $allMiddleware = [...$route['middlewares'], ...$this->middlewares];
+
+            foreach ($allMiddleware as $middleware) {
 
                 $middlewareInstance = $container ?
                     $container->resolve($middleware) :
@@ -63,5 +65,11 @@ class Router
     public function addMiddleware(string $middleware)
     {
         $this->middlewares[] = $middleware;
+    }
+
+    public function addRouteMiddleware(string $middleware)
+    {
+        $lastRouteKey = array_key_last($this->routes);
+        $this->routes[$lastRouteKey]['middlewares'][] = $middleware;
     }
 }
