@@ -20,14 +20,32 @@
         <div class="form-group">
             <label for="comment_name">Name</label>
             <input type="text" name="comment_name" id="comment_name" />
+            <?php if (array_key_exists('comment_name', $errors)) : ?>
+                <?php foreach ($errors['comment_name'] as $msg) ?>
+                <div class="msg_error">
+                    Error :<?php echo $msg; ?>
+                </div>
+            <?php endif; ?>
         </div>
         <div class="form-group">
             <label for="comment_email">Email</label>
             <input type="email" name="comment_email" id="comment_email" />
+            <?php if (array_key_exists('comment_email', $errors)) : ?>
+                <?php foreach ($errors['comment_email'] as $msg) ?>
+                <div class="msg_error">
+                    Error :<?php echo $msg; ?>
+                </div>
+            <?php endif; ?>
         </div>
         <div class="form-group">
             <label for="comment_text">Comment</label>
             <textarea name="comment_text" id="comment_text" rows="4"></textarea>
+            <?php if (array_key_exists('comment_text', $errors)) : ?>
+                <?php foreach ($errors['comment_text'] as $msg) ?>
+                <div class="msg_error">
+                    Error :<?php echo $msg; ?>
+                </div>
+            <?php endif; ?>
         </div>
         <input class="btn btn-green" type="submit" name="submit" value="Add Comment" />
     </form>

@@ -40,7 +40,17 @@ class PostService
 
     public function getAll(): array
     {
-        return $this->db->query("SELECT id,title,content FROM posts WHERE is_enabled=true;")->findAll();
+        return $this->db->query(
+            "SELECT p.id,p.title,p.content,u.username,
+            (SELECT COUNT(*) FROM comments c WHERE c.post_id = p.id AND c.is_enabled = true) AS comment_count
+            FROM 
+                posts p
+            JOIN 
+                users u ON p.user_id = u.id
+            WHERE 
+                p.is_enabled = true;
+"
+        )->findAll();
     }
 
     public function getById($id): array

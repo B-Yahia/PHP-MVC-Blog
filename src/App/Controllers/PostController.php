@@ -64,6 +64,7 @@ class PostController
 
     public function addComment()
     {
+        $this->validatorService->validateComment($_POST);
         $this->postService->addComment([
             "post_id" => $_GET['id'],
             'name' => $_POST['comment_name'],

@@ -26,6 +26,7 @@
                     <input class="btn btn-red" type="submit" name="Delete" value="DeletePost" />
                 </form>
             </div>
+            <p> <span class="badge"> Comments Nbr : <?php echo $post['comment_count'] ?> </span> <span class="badge">Author : <?php echo $post['username'] ?> </span> </p>
         </div>
     <?php endforeach; ?>
 
