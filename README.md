@@ -36,6 +36,11 @@ composer install
 The app is now deployed on my VPS, and you can try it at:
 [http://45.137.148.234:8082/](http://45.137.148.234:8082/)
 
+You can sign up yourself and create a username and password to try the app or you can use these credentials:
+
+  Username: `admin1`
+  Password: `password`
+
 ## Configuring a Virtual Host
 
 If you need to configure a virtual host to deploy this application, you can follow the instructions provided in the README file of the [linux-apache-virtual-host-setup](https://github.com/B-Yahia/linux-apache-virtual-host-setup) repository.
