@@ -48,6 +48,6 @@ If you need to configure a virtual host to deploy this application, you can foll
 
 ## Requirements
 
-  - PHP 7.4+
+  - PHP 8.1+
   - MySQL
   - Composer
