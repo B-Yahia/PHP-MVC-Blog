@@ -35,7 +35,7 @@ composer install
 
 The app is now deployed on my VPS, and you can try it at:
  - [http://45.137.148.234:8082/](http://45.137.148.234:8082/)  or
- - [https://blog.apitestdomain.site/](https://blog.apitestdomain.site/)
+ - [https://blog.thefullstackguy.com/](https://blog.thefullstackguy.com/)
 
 You can sign up yourself and create a username and password to try the app or you can use these credentials:
 
